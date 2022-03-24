@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Predict Footballer Rating </h1><h2>NB:>Every value Rated out of 100</h2><h2>experience_no_of_days range:=<5000</h2>
+   
+    <div class=form>
+        <form action="/predict" method="post">
+
+            <h1>  </h1>
+            <label for= overall_rating > overall_rating :-></label>
+            <input type= text name= overall_rating id= overall_rating  placeholder= overall_rating >
+            <h1>  </h1>
+            <label for= potential > potential :-></label>
+            <input type= text name= potential id= potential  placeholder= potential >
+            <h1>  </h1>
+            <label for= crossing > crossing :-></label>
+            <input type= text name= crossing id= crossing  placeholder= crossing >
+            <h1>  </h1>
+            <label for= finishing > finishing :-></label>
+            <input type= text name= finishing id= finishing  placeholder= finishing >
+            <h1>  </h1>
+            <label for= heading_accuracy > heading_accuracy :-></label>
+            <input type= text name= heading_accuracy id= heading_accuracy  placeholder= heading_accuracy >
+            <h1>  </h1>
+            <label for= short_passing > short_passing :-></label>
+            <input type= text name= short_passing id= short_passing  placeholder= short_passing >
+            <h1>  </h1>
+            <label for= volleys > volleys :-></label>
+            <input type= text name= volleys id= volleys  placeholder= volleys >
+            <h1>  </h1>
+            <label for= dribbling > dribbling :-></label>
+            <input type= text name= dribbling id= dribbling  placeholder= dribbling >
+            <h1>  </h1>
+            <label for= curve > curve :-></label>
+            <input type= text name= curve id= curve  placeholder= curve >
+            <h1>  </h1>
+            <label for= free_kick_accuracy > free_kick_accuracy :-></label>
+            <input type= text name= free_kick_accuracy id= free_kick_accuracy  placeholder= free_kick_accuracy >
+            <h1>  </h1>
+            <label for= long_passing > long_passing :-></label>
+            <input type= text name= long_passing id= long_passing  placeholder= long_passing >
+            <h1>  </h1>
+            <label for= ball_control > ball_control :-></label>
+            <input type= text name= ball_control id= ball_control  placeholder= ball_control >
+            <h1>  </h1>
+            <label for= acceleration > acceleration :-></label>
+            <input type= text name= acceleration id= acceleration  placeholder= acceleration >
+            <h1>  </h1>
+            <label for= sprint_speed > sprint_speed :-></label>
+            <input type= text name= sprint_speed id= sprint_speed  placeholder= sprint_speed >
+            <h1>  </h1>
+            <label for= agility > agility :-></label>
+            <input type= text name= agility id= agility  placeholder= agility >
+            <h1>  </h1>
+            <label for= reactions > reactions :-></label>
+            <input type= text name= reactions id= reactions  placeholder= reactions >
+            <h1>  </h1>
+            <label for= balance > balance :-></label>
+            <input type= text name= balance id= balance  placeholder= balance >
+            <h1>  </h1>
+            <label for= shot_power > shot_power :-></label>
+            <input type= text name= shot_power id= shot_power  placeholder= shot_power >
+            <h1>  </h1>
+            <label for= jumping > jumping :-></label>
+            <input type= text name= jumping id= jumping  placeholder= jumping >
+            <h1>  </h1>
+            <label for= stamina > stamina :-></label>
+            <input type= text name= stamina id= stamina  placeholder= stamina >
+            <h1>  </h1>
+            <label for= strength > strength :-></label>
+            <input type= text name= strength id= strength  placeholder= strength >
+            <h1>  </h1>
+            <label for= long_shots > long_shots :-></label>
+            <input type= text name= long_shots id= long_shots  placeholder= long_shots >
+            <h1>  </h1>
+            <label for= aggression > aggression :-></label>
+            <input type= text name= aggression id= aggression  placeholder= aggression >
+            <h1>  </h1>
+            <label for= interceptions > interceptions :-></label>
+            <input type= text name= interceptions id= interceptions  placeholder= interceptions >
+            <h1>  </h1>
+            <label for= positioning > positioning :-></label>
+            <input type= text name= positioning id= positioning  placeholder= positioning >
+            <h1>  </h1>
+            <label for= vision > vision :-></label>
+            <input type= text name= vision id= vision  placeholder= vision >
+            <h1>  </h1>
+            <label for= penalties > penalties :-></label>
+            <input type= text name= penalties id= penalties  placeholder= penalties >
+            <h1>  </h1>
+            <label for= marking > marking :-></label>
+            <input type= text name= marking id= marking  placeholder= marking >
+            <h1>  </h1>
+            <label for= standing_tackle > standing_tackle :-></label>
+            <input type= text name= standing_tackle id= standing_tackle  placeholder= standing_tackle >
+            <h1>  </h1>
+            <label for= sliding_tackle > sliding_tackle :-></label>
+            <input type= text name= sliding_tackle id= sliding_tackle  placeholder= sliding_tackle >
+            <h1>  </h1>
+            <label for= gk_diving > gk_diving :-></label>
+            <input type= text name= gk_diving id= gk_diving  placeholder= gk_diving >
+            <h1>  </h1>
+            <label for= gk_handling > gk_handling :-></label>
+            <input type= text name= gk_handling id= gk_handling  placeholder= gk_handling >
+            <h1>  </h1>
+            <label for= gk_kicking > gk_kicking :-></label>
+            <input type= text name= gk_kicking id= gk_kicking  placeholder= gk_kicking >
+            <h1>  </h1>
+            <label for= gk_positioning > gk_positioning :-></label>
+            <input type= text name= gk_positioning id= gk_positioning  placeholder= gk_positioning >
+            <h1>  </h1>
+            <label for= gk_reflexes > gk_reflexes :-></label>
+            <input type= text name= gk_reflexes id= gk_reflexes  placeholder= gk_reflexes >
+            <h1>  </h1>
+            <label for= experience_no_of_days > experience_no_of_days :-></label>
+            <input type= text name= experience_no_of_days id= experience_no_of_days  placeholder= experience_no_of_days >
+            <h1> </h1>
+            <label for="preferred_foot">preferred_foot-></label>
+             <select name="preferred_foot" id="preferred_foot">
+                <option value=1> Left </option>
+                <option value=0> Right </option>
+             </select>
+             <h1> </h1>
+             <label for="attacking_work_rate">attacking_work_rate:-></label>
+             <select name="attacking_work_rate" id="attacking_work_rate">
+                 <option value=0>medium</option>
+                 <option value=1>high</option>
+                 <option value=2>low</option>
+                 <option value=3>None</option>
+                 <option value=4>normal</option>
+             </select>
+             <h1> </h1>
+             <label for="defensive_work_rate"> defensive_work_rate:-></label>
+             <select name="defensive_work_rate" id="defensive_work_rate">
+                <option value=0>medium</option>
+                <option value=1>high</option>
+                <option value=2>low</option>
+                <option value=3>None</option>
+                <option value=4>normal</option>
+             </select>
+
+
+             
+         <input type="submit" value="Predict">
+
+
+
+
+        </form>
+    </div>  
+</body>
+</html>
